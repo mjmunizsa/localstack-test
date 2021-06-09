@@ -14,7 +14,7 @@
 	<name>localstack</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -23,12 +23,6 @@
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-kinesis -->
-		<dependency>
-		    <groupId>com.amazonaws</groupId>
-		    <artifactId>aws-java-sdk-kinesis</artifactId>
-		    <version>1.11.1024</version>
-		</dependency>
-		
 		<dependency>
 		    <groupId>com.amazonaws</groupId>
 		    <artifactId>aws-java-sdk-kinesis</artifactId>
@@ -49,14 +43,13 @@
 		    <version>1.11.1024</version>
 		</dependency>
 		
-			<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb -->
+ 			<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-dynamodb -->
 		<dependency>
 		    <groupId>com.amazonaws</groupId>
 		    <artifactId>aws-java-sdk-cloudwatch</artifactId>
 		    <version>1.11.1024</version>
 		</dependency>
 
-		
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

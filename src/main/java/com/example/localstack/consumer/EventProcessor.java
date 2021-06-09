@@ -42,9 +42,10 @@ public class EventProcessor implements ShardRecordProcessor {
 	                ByteBuffer byteBuf = record.data().get(b);
 	                originalData = new String(byteBuf.array(), "UTF-8");
 
-	                LOG.info("Data from kinesis stream : {}", originalData);
+	                LOG.info("Processing record pk: {} -- Seq: {}", record.partitionKey(), record.sequenceNumber());
 	            } catch (Exception e) {
 	                LOG.error("Error parsing record {}", e);
+	                e.printStackTrace();
 	                System.exit(1);
 	            }
 	            
